@@ -633,6 +633,36 @@
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
             },
+            ".carousel-img": {
+              "width": "100%",
+              "margin": "0"
+            },
+            "@media (max-width: 767px)": {
+              ".amp-carousel-button": {
+                "display": "none"
+              }
+            }
+          },
+          "_name": "slider3",
+          "_customHTML": "<section class=\"slider3 slider\" group=\"Carousels &amp; Sliders\" plugins=\"amp-main,amp-carousel\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        \n        <input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\" checked=\"\" condition=\"imagesAmount > 1 &amp;&amp; typeSlide != 'carousel'\">\n            <input type=\"range\" inline=\"\" title=\"Delay\" name=\"delay\" min=\"1000\" max=\"5000\" step=\"1000\" value=\"4000\" condition=\"autoplay &amp;&amp; imagesAmount > 1 &amp;&amp; typeSlide != 'carousel'\">\n        \n        <select title=\"Images\" name=\"imagesAmount\">\n            <option value=\"2\" selected=\"\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/70420426_107603870632369_608550458721566720_n-960x960.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#000000\" selected=\"\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-pb-4\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-fonts-style mbr-section-title mbr-light align-center\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\">Slider With Images</h3>\n            <h4 class=\"mbr-fonts-style mbr-section-subtitle mbr-light align-center\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore incidunt molestias, vitae recusandae error ipsam distinctio, ipsum.</h4>\n        </div>\n        <div class=\"slider-box\" data-autoplay=\"{{autoplay}}\" data-delay=\"{{delay}}\"><amp-carousel class=\"carousel\" width=\"13.5\" height=\"9\" layout=\"responsive\" type=\"slides\"><div class=\"carousel-img\">\n                    <amp-img class=\"mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/gold-legal-business-advertising-website-2216x1067.png\" alt=\"Mobirise\" width=\"18.69165885660731\" height=\"9\" layout=\"responsive\">\n                        <div placeholder=\"\" class=\"placeholder\"></div>\n                        <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/gold-legal-business-advertising-website-2216x1067.png\" alt=\"Mobirise\" title=\"\">\n                    </amp-img>\n                </div><div class=\"carousel-img\">\n                    <amp-img class=\"mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/blue-graphic-designer-portfolio-website-2025x975.png\" alt=\"Mobirise\" width=\"18.692307692307693\" height=\"9\" layout=\"responsive\">\n                            <div placeholder=\"\" class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/blue-graphic-designer-portfolio-website-2025x975.png\" alt=\"Mobirise\" title=\"\">\n                    </amp-img>\n                </div></amp-carousel>\n            \n        </div>\n    </div>\n</section>",
+          "_cid": "s4Ji6PkMJI",
+          "_anchor": "slider3-12",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
             "& when not (@listItems = 0)": {
               "@media (max-width: 767px)": {
                 ".list-item:not(.last-child)": {
@@ -861,36 +891,6 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".carousel-img": {
-              "width": "100%",
-              "margin": "0"
-            },
-            "@media (max-width: 767px)": {
-              ".amp-carousel-button": {
-                "display": "none"
-              }
-            }
-          },
-          "_name": "slider3",
-          "_customHTML": "<section class=\"slider3 slider\" group=\"Carousels &amp; Sliders\" plugins=\"amp-main,amp-carousel\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        \n        <input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\" checked=\"\" condition=\"imagesAmount > 1 &amp;&amp; typeSlide != 'carousel'\">\n            <input type=\"range\" inline=\"\" title=\"Delay\" name=\"delay\" min=\"1000\" max=\"5000\" step=\"1000\" value=\"4000\" condition=\"autoplay &amp;&amp; imagesAmount > 1 &amp;&amp; typeSlide != 'carousel'\">\n        \n        <select title=\"Images\" name=\"imagesAmount\">\n            <option value=\"2\" selected=\"\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/70420426_107603870632369_608550458721566720_n-960x960.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#000000\" selected=\"\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-pb-4\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-fonts-style mbr-section-title mbr-light align-center\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\">Slider With Images</h3>\n            <h4 class=\"mbr-fonts-style mbr-section-subtitle mbr-light align-center\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore incidunt molestias, vitae recusandae error ipsam distinctio, ipsum.</h4>\n        </div>\n        <div class=\"slider-box\" data-autoplay=\"{{autoplay}}\" data-delay=\"{{delay}}\"><amp-carousel class=\"carousel\" width=\"13.5\" height=\"9\" layout=\"responsive\" type=\"slides\"><div class=\"carousel-img\">\n                    <amp-img class=\"mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/gold-legal-business-advertising-website-2216x1067.png\" alt=\"Mobirise\" width=\"18.69165885660731\" height=\"9\" layout=\"responsive\">\n                        <div placeholder=\"\" class=\"placeholder\"></div>\n                        <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/gold-legal-business-advertising-website-2216x1067.png\" alt=\"Mobirise\" title=\"\">\n                    </amp-img>\n                </div><div class=\"carousel-img\">\n                    <amp-img class=\"mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/blue-graphic-designer-portfolio-website-2025x975.png\" alt=\"Mobirise\" width=\"18.692307692307693\" height=\"9\" layout=\"responsive\">\n                            <div placeholder=\"\" class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/blue-graphic-designer-portfolio-website-2025x975.png\" alt=\"Mobirise\" title=\"\">\n                    </amp-img>\n                </div></amp-carousel>\n            \n        </div>\n    </div>\n</section>",
-          "_cid": "s4Ji6PkMJI",
-          "_anchor": "slider3-12",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
           "_params": {}
         }
       ]
