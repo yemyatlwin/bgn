@@ -80,11 +80,12 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Home",
-        "meta_descr": "",
+        "title": "Bagan Lacquer",
+        "meta_descr": "Traditional Lacquerware, Lacquer Art, Myanmar Lacquerware, Bagan Lacquer",
         "header_custom": "",
         "footer_custom": "",
-        "html_before": ""
+        "html_before": "",
+        "meta_image": "@PROJECT_PATH@/assets/images/brown-and-white-professional-skin-care-blog-banner-2000x1125.png"
       },
       "components": [
         {
